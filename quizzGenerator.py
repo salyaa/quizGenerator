@@ -75,3 +75,11 @@ class Quiz:
                 print(f"[{i}] Pass")
             else:
                 print(f"[{i}] Fail")
+
+# Example:
+questions = [
+    OpenQuestion('How are you?', ['Great!', 'Amazing']),
+    YesNoQuestion('Are you happy?', True)
+]
+quiz = Quiz(questions)
+quiz.start()
