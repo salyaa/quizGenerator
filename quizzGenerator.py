@@ -1,16 +1,15 @@
-# Define the MultiOptionsQuestion class as previously corrected
 from abc import ABC, abstractmethod
 from typing import List
 
 class Question(ABC):
     @abstractmethod
     def print(self) -> None:
-        """Print the question."""
+        """Print question."""
         pass
     
     @abstractmethod
     def check(self, string: str) -> bool:
-        """Check the given answer."""
+        """Check given answer."""
         pass
 
 class YesNoQuestion(Question):
